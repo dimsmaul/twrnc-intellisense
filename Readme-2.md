@@ -26,10 +26,10 @@ Intelligent Tailwind CSS tooling for TWRNC in React Native [web:23].
 3. Click **Install**
 
 ### From Command Line
+
 ```
 code --install-extension dimsmauls.twrnc-intellisense
 ```
-
 
 ## Requirements
 
@@ -42,8 +42,7 @@ code --install-extension dimsmauls.twrnc-intellisense
 Import `twrnc` in your React Native components:
 
 <!-- TODO:Image usage -->
-<img src="https://" alt="" />
-
+<img src="https://raw.githubusercontent.com/dimsmaul/twrnc-intellisense/main/packages/vscode-tailwindcss/.github/usage.png" alt="" />
 
 Start typing Tailwind classes inside `` tw`...` `` and you'll get autocomplete suggestions [web:21][web:22].
 
@@ -51,10 +50,8 @@ Start typing Tailwind classes inside `` tw`...` `` and you'll get autocomplete s
 
 This extension inherits most settings from Tailwind CSS IntelliSense. You can customize behavior in your `.vscode/settings.json`:
 
-
 <!-- TODO: image setting -->
-<img src="https://" alt="" />
-
+<img src="https://raw.githubusercontent.com/dimsmaul/twrnc-intellisense/main/packages/vscode-tailwindcss/.github/setting.jpg" alt="" />
 
 ### Available Settings
 
