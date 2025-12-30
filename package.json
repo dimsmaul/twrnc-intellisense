@@ -1,7 +1,7 @@
 {
   "name": "twrnc-intellisense",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Intelligent Tailwind CSS tooling for TWRNC in React Native",
   "author": "Dimas Maulana",
   "license": "MIT",

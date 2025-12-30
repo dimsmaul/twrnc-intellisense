@@ -1,6 +1,6 @@
 {
   "name": "twrnc-intellisense",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "TWRNC - Tailwind for React Native",
   "description": "Intelligent Tailwind CSS tooling for TWRNC in React Native",
   "publisher": "dimsmauls",
