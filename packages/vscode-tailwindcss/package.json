@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "displayName": "TWRNC IntelliSense",
   "description": "Intelligent Tailwind CSS tooling for TWRNC in React Native",
-  "publisher": "dimsmaul",
-  "author": "Dimas Maulidan",
+  "publisher": "dimsmauls",
+  "author": "Dimas Maulana",
   "license": "MIT",
   "homepage": "https://github.com/tailwindlabs/tailwindcss-intellisense",
   "bugs": {
