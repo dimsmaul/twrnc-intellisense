@@ -1,9 +1,10 @@
 {
-  "name": "vscode-tailwindcss",
-  "version": "0.14.29",
-  "displayName": "Tailwind CSS IntelliSense",
-  "description": "Intelligent Tailwind CSS tooling for VS Code",
-  "author": "Brad Cornes <hello@bradley.dev>",
+  "name": "twrnc-intellisense",
+  "version": "0.1.0",
+  "displayName": "TWRNC IntelliSense",
+  "description": "Intelligent Tailwind CSS tooling for TWRNC in React Native",
+  "publisher": "dimsmaul",
+  "author": "Dimas Maulidan",
   "license": "MIT",
   "homepage": "https://github.com/tailwindlabs/tailwindcss-intellisense",
   "bugs": {
@@ -14,7 +15,6 @@
     "type": "git",
     "url": "https://github.com/tailwindlabs/tailwindcss-intellisense.git"
   },
-  "publisher": "bradlc",
   "keywords": [
     "tailwind",
     "tailwindcss",
@@ -57,14 +57,14 @@
     ],
     "commands": [
       {
-        "command": "tailwindCSS.showOutput",
-        "title": "Tailwind CSS: Show Output",
-        "enablement": "tailwindCSS.hasOutputChannel"
+        "command": "twrncCSS.showOutput",
+        "title": "TWRNC CSS: Show Output",
+        "enablement": "twrncCSS.hasOutputChannel"
       },
       {
-        "command": "tailwindCSS.sortSelection",
-        "title": "Tailwind CSS: Sort Selection",
-        "enablement": "editorHasSelection && (resourceScheme == file || resourceScheme == vscode-remote) && tailwindCSS.activeTextEditorSupportsClassSorting"
+        "command": "twrncCSS.sortSelection",
+        "title": "TWRNC CSS: Sort Selection",
+        "enablement": "editorHasSelection && (resourceScheme == file || resourceScheme == vscode-remote) && twrncCSS.activeTextEditorSupportsClassSorting"
       }
     ],
     "grammars": [
@@ -189,7 +189,10 @@
           "items": {
             "type": "string"
           },
-          "default": [],
+          "default": [
+            "tw",
+            "tw.style"
+          ],
           "markdownDescription": "The function or tagged template literal names for which to provide class completions, hover previews, linting etc."
         },
         "tailwindCSS.suggestions": {
@@ -329,7 +332,14 @@
         },
         "tailwindCSS.experimental.classRegex": {
           "type": "array",
-          "scope": "language-overridable"
+          "scope": "language-overridable",
+          "default": [
+            "tw`([^`]*)",
+            [
+              "tw\\.style\\(([^)]*)\\)",
+              "'([^']*)'"
+            ]
+          ]
         },
         "tailwindCSS.experimental.configFile": {
           "type": [

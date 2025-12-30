@@ -1,6 +1,14 @@
 {
-  "name": "tailwindcss-intellisense",
+  "name": "twrnc-intellisense",
   "private": true,
+  "version": "0.1.0",
+  "description": "Intelligent Tailwind CSS tooling for TWRNC in React Native",
+  "author": "Dimas Maulidan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dimsmaul/twrnc-intellisense.git"
+  },
   "devDependencies": {
     "@npmcli/package-json": "^5.0.0",
     "@types/culori": "^2.1.0",
